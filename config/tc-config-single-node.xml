@@ -25,13 +25,10 @@ Terracotta, Inc., a Software AG company
         <tsa-port>9510</tsa-port>
         <management-port>9540</management-port>
         <tsa-group-port>9530</tsa-group-port>
-        <dataStorage size="2g">            
+        <dataStorage size="2g">
+          <offheap size="100m"/>            
           <hybrid/> 
-        </dataStorage>
-        <offheap>
-          <enabled>OFFHEAP_ENABLED</enabled>
-          <maxDataSize>OFFHEAP_MAX_SIZE</maxDataSize>
-        </offheap>
+        </dataStorage>        
         <logs>stdout:</logs>
       </server>
     </mirror-group>
